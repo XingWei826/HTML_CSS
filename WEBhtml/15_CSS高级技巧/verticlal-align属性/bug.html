@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+        img {
+            /* vertical-align: bottom; */
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        解决图片底部默认空白缝隙问题：
+            bug:图片底侧会有一个空白缝隙，原因是行内块元素会和文字的基线(base-line)对齐。
+            solution:
+                1.给图片添加vertical-align: midlle | top | bottom。
+                2.把图片转换为 display: block;
+     -->
+    <div>
+        <img src="../../images/image.png" alt=""> pink你好吗
+        <!-- <img src="../../images/image.png" alt="">  -->
+    </div>
+</body>
+
+</html>

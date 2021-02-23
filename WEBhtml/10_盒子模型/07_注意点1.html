@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            /* width: 160px; */
+            /* height: 180px; */
+            border: 10px solid green;
+            padding-left: 20px;
+            background-color: red;
+        }
+        /* 此时，div大小为: 240*220; */
+        /* 为了即使加了border和padding后，仍然使得div大小为200*200，
+        那么只能手动调节宽度和高度了！
+        见宽度和高度调节为160*180;
+        那么即使加了border和padding后，div大小仍然为200*200! */
+    </style>
+</head>
+<body>
+    <!-- 
+        1. 边框border会影响盒子的实际大小;
+        2. 内边距padding会影响盒子的实际大小;
+        3. 通过F12里的动态调试扩增就可以看的一清二楚！
+        4. 通过F12里的箭头指向div就会显示出尺寸！
+     -->
+     <div>hello</div>
+</body>
+</html>

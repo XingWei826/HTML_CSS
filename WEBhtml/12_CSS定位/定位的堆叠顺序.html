@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0 ;
+            width: 200px;
+            height: 200px;
+        }
+        .damao {
+            z-index: 1;
+            background-color: red;
+        }
+        .ermao {
+            z-index: 2;
+            top: 50px;
+            left: 50px;
+            background-color: green;
+        }
+        .sanmao {
+            top: 100px;
+            left: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        在使用定位布局的时候,可能会出现盒子重叠的情况。
+        此时，可以使用z-index来控制盒子的前后次序(z轴)。
+     -->
+    <!-- 
+        定位堆叠顺序：z-index: 1;
+        数值可以是正数，负数，或者是0，默认是auto;
+        数值越小,在堆叠顺序中就越靠后;
+        如果z-index值相同，那么按照书写顺序，后来居上！
+        notice：只有定位的盒子才有z-index属性！
+                数值后面不能有单位！
+
+        Notice：说白了，谁的值越大，谁就压住别人显示了出来;
+    -->
+     <div class="box damao">大毛</div>
+     <div class="box ermao">二毛</div>
+     <div class="box sanmao">三毛</div>
+</body>
+</html>
+
+
+
+

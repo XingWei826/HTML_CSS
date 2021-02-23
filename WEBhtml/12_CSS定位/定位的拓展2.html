@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 1.浮动的情况之下不会压住文字/图片 */
+            /* float: left;*/
+            /* 2.绝对定位/相对定位会压住下面标准流的所有内容！ */
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(226, 154, 154);
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1.浮动元素只会压住它下面标准流的盒子，但是不会压住下面标准流盒子里面的文字(图片);
+        2.绝对定位/相对定位会压住下面标准流的所有内容！
+        3.浮动之所以不会压住文字，以为浮动最初产生的目的就是为了做文字环绕效果的！
+     -->
+     <div class="box"></div>
+     <p>分数低防守打法就是龙卷风了设计费sl</p>
+</body>
+</html>

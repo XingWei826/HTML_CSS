@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hgroup>h1 {
+            background-color: red;
+            margin-bottom: 0px;
+        }
+
+        hgroup>h2 {
+            background-color: blue;
+            margin-top: 0px;
+        }
+
+        tr>th {
+            text-align: left;
+            background: gray;
+            color: white;
+        }
+
+        tr>th:only-of-type {
+            text-align: right;
+            background: lightgrey;
+            color: grey;
+        }
+
+        table>caption {
+            background: red;
+        }
+
+        #colgroup1 {
+            background: green;
+        }
+
+        #colgroup2 {
+            background: yellow;
+        }
+        #col1 {
+            background: purple;
+        }
+        #col2 {
+            background: red;
+        }
+        #col3 {
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <abbr title="HelloWord">HW</abbr></br>
+        <dfn title="NiHao">NiHao</dfn></br>
+        <q>山高任鸟飞,海阔凭鱼跃---唐诗</q></br>
+        <cite>人民日报</cite><br>
+        <ruby>魑<rp>(</rp>
+            <rt>chi</rt>
+            <rp>)</rp>
+        </ruby><br>
+        <ruby>魅<rp>(</rp>
+            <rt>mei</rt>
+            <rp>)</rp>
+        </ruby><br>
+        <ruby>魍<rp>(</rp>
+            <rt>wang</rt>
+            <rp>)</rp>
+        </ruby><br>
+        <ruby>魉<rp>(</rp>
+            <rt>liang</rt>
+            <rp>)</rp>
+        </ruby><br>
+        This is a rtl: <bdo dir="rtl">你好吗</bdo><br>
+        <mark style="background-color: red;">我被突出了</mark><br>
+        <del>我被删除了</del><br>
+        <ins>我是新增的元素</ins><br>
+        now is <time datetime="2021-2-14">你吃饭了吗</time>
+        <pre>
+            <code>
+                for(var i = 0;i < 5;i ++) {
+                    if(i % 2 === 0) {
+                        break;
+                    }
+                }
+                Hello World,使用pre元素将保留了原始文档的格式，
+                其阻挡了空白字符的合并，使得源文档格式得以保留。
+                通常将其与编程元素code进行搭配，因为编程语言具有
+                特定的风格模式。
+                                                    ---Happy
+            </code>
+        </pre>
+        <hr>
+        <ol start="2" type="1" reversed>
+            <li>hello</li>
+            <li>world</li>
+            <li>love</li>
+        </ol>
+        <ul style="list-style-type: none;">
+            <li>好的</li>
+            <li>好的</li>
+            <li>好的</li>
+        </ul>
+        <!-- dl>(dt>dd*3)*2 -->
+        <dl>
+            <dt>Apple</dt>
+            <dd>The apple is the fruit of the apple_tree!</dd>
+            <dd>HelloWorld</dd>
+            <dt>Banana</dt>
+            <dd>Banana is a good fruit!</dd>
+            <dd>i like eat banana!</dd>
+            <dt>Cherry</dt>
+            <dd>The Cherry is very expansive!</dd>
+            <dd>but,more people like eat it!</dd>
+        </dl>
+    </div>
+    <figure>
+        <figcaption>国家新闻天地</figcaption>
+        <pre>
+            <code>
+                var callback = function() {
+                    for(let i = 0;i < 5;i++) {
+                        if(i == 4) 
+                            break;
+                    }
+                }
+            </code>
+    </pre>
+    </figure>
+    <hgroup>
+        <h1>一级标题</h1>
+        <h2>二级标题</h2>
+    </hgroup>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    </hgroup>
+    <!-- 节元素：此时，三个h1存在明显的区别: 字号依次减少，颜色依次淡化-->
+    <section>
+        <h1>how are you</h1>
+        <section>
+            <h1>how are you</h1>
+            <section>
+                <h1>how are you</h1>
+            </section>
+        </section>
+    </section>
+
+    <section>
+        <header>
+            <h1>中华人民共和国</h1>
+            <ul>
+                <Li>甘肃省</Li>
+                <Li>浙江省</Li>
+                <Li>江苏省</Li>
+            </ul>
+        </header>
+        <footer>
+            <h3>阅览结束</h3>
+        </footer>
+    </section>
+
+    <nav>
+        <h1>Contents</h1>
+        <ul>
+            <li><a href="#fruits">fruits</a></li>
+            <ul>
+                <li><a href="#apple">apple</a></li>
+                <li><a href="#banana">banana</a></li>
+                <ul>
+                    <li><a href="#more fruits">more fruits</a></li>
+                </ul>
+            </ul>
+            <li><a href="#vegetables">vegetables</a></li>
+            <ul>
+                <li><a href="#tree">tree</a></li>
+            </ul>
+        </ul>
+    </nav>
+    <aside>
+        <h1>why fruits is healthy</h1>
+        here are three reasons why everyone should eat more fruit:
+        <ol>
+            <li>Fruit contains lots of vitamins</li>
+            <li>Fruit is a source of fibre</li>
+            <li>Fruit contains few calories</li>
+        </ol>
+        <details>
+            <summary>Kinds of Triathlon</summary>
+            There are different kinds of triathlon-sprint,Olympic and son on.
+            I am aiming for Olympic,which consists of the following.
+            <ol>
+                <li>1.5km swim</li>
+                <li>40km cycle</li>
+                <li>10km run</li>
+            </ol>
+        </details>
+        <address>
+            Questions and comments? <a href="https://www.baidu.com">call me</a>
+        </address>
+    </aside>
+    <table>
+        <caption>Results of the 2011 Fruit Survey</caption>
+        <!-- 第一种：  （按列处理表格） -->
+        <!-- <colgroup id="colgroup1" span="2"></colgroup> -->
+        <!-- <colgroup id="colgroup2" span="2"></colgroup> -->
+
+        <!-- 第二种： -->
+        <col id="col1" span="2">
+        <col id="col2" span="2">
+        <col id="col3" span="1">
+        <thead>
+            <tr>
+                <th>等级</th>
+                <th>名字</th>
+                <th>颜色</th>
+                <th>大小</th>
+                <th>高兴</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <th>等级</th>
+            <th>名字</th>
+            <th>颜色</th>
+            <th>大小</th>
+            <th>高兴</th>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th>Favorite:</th>
+                <td>Apples</td>
+                <td>Green</td>
+                <td>Medium</td>
+                <td>aaa</td>
+            </tr>
+            <tr>
+                <th>2nd Favorite:</th>
+                <td>Oranges</td>
+                <td>Orange</td>
+                <td>Large</td>
+                <td>ggg</td>
+            </tr>
+            <tr>
+                <th>3rd Favorite:</th>
+                <td>Pomegranate</td>
+                <td>A kind of greeny-red Varies from medium to large</td>
+                <td>Small</td>
+                <td>sss</td>
+            </tr>
+        </tbody>
+    </table>
+    </table>
+</body>
+
+</html>

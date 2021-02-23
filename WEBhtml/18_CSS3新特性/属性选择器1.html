@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*1. 必须是input同时具有value这个属性 */
+        /* input[value] {
+            color: red;
+        } */
+
+        /* 2.匹配具有type属性且其值为text的元素 */
+        input[type=text] {
+            color: green;
+        }
+
+        /* 3. 匹配具有class属性且其值以icon开头的元素*/
+        div[class^=icon] {
+            color: red;
+        }
+
+        /* 4. 匹配具有class属性且其值以data结尾的元素 */
+        section[class$=data] {
+            color: green;
+        }
+
+        /* 5. 匹配具有class属性且其值中含有a字母的元素 */
+        span[class*=a]{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1.利用属性选择器可以不用借助于类或者id选择器 -->
+    <!-- <input type="text" name="" id="" value="请输入用户名："> -->
+    <!-- <input type="text" name="" id=""> -->
+   
+    <!-- 2.属性选择器可以选择 属性=值 的某些元素 -->
+    <input type="text" name="" id="">
+    <input type="password" name="" id="">
+
+    <!-- 3.属性选择器可以选择属性值开头的某些元素 -->
+    <div class="icon1">图标1</div>
+    <div class="icon2">图标2</div>
+    <div class="icon3">图标3</div>
+    <div class="icon4">图标4</div>
+
+    <!-- 4.与3相反，结尾的 -->
+    <section class="icon1-data">熊大</section>
+    <section class="icon2-data">熊二</section>
+    <section class="icon3-data">熊三</section>
+
+    <!-- 5.匹配具有某一属性并且值中含有val的元素 -->
+    <span class="rwg">我中没有a</span><br/>
+    <span class="fs ">我中没有a</span><br/>
+    <span class="te1sa">我中含有a</span><br/>
+</body>
+</html>

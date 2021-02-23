@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1.使用object元素嵌入一张图像 -->
+    <object data="./res/1.ico" type=""></object>
+
+
+    
+    <!-- 2.使用object元素创建分区响应图 -->
+    <!-- 很遗憾，Chrome现在不支持这个特性 -->
+    <map name="myMap">
+        <area shape="rect" coords="18,16,155,136" href="./a元素.html" alt="not found">
+        <area shape="rect" coords="161,16,340,136" href="./test.html" alt="not found">
+        <area shape="default" coords="" href="./输入和输出.html" alt="not found">
+    </map>
+    <object data="./res/test.png" type="" usemap="#myMap"></object>
+
+
+
+    <!-- 3.将object元素作为浏览器上下文元素 -->
+    <ul>
+        <li>
+            <a href="./其他元素1.html" target="myFrame">Fruits i like</a>
+        </li>
+        <li>
+            <a href="./其他元素2.html" target="myFrame">Vegetables i like</a>
+        </li>
+    </ul>
+    <!-- <iframe name="myFrame" width="300" height="100" src="./分布区响应图.html" frameborder="0"></iframe> -->
+    <object data="" type="" name="myFrame" width="300" height="100"></object>
+</body>
+
+</html>

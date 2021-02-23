@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  1.相邻块元素垂直外边距合并：  */
+        .damao {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-bottom: 100px;
+        }
+        .ermao {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin-top: 200px;
+        }
+        /* 2.嵌套块元素垂直外边距塌陷： */
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            margin-top: 50px;
+            /* 方案一: */
+            /* border: 1px solid transparent;*/
+
+            /* 方案二: */
+            /* padding: 1px;                      */
+
+            /* 方案三： */
+            overflow: hidden;
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 使用margin定义块元素的垂直外边距时,可能会出现外边距的合并; -->
+    <!-- 
+        【1.】相邻块元素垂直外边距合并：
+            当上下相邻的两个块元素（兄弟关系）相遇时,如果上面的元素有下外边距margin-bottom,
+            同时下面的元素有上外边距margin-top时，则它们之间的垂直间距并不是margin-bottom + margin-top之和;
+            此时间距 = max[margin-bottom,margin-top],也即是取两者中较大的一方作为垂直间距;
+            这种现象被称为相邻块元素垂直外边距的合并。
+            => 本例中，damao和ermao之间的间距实际为200px!
+     -->
+     <!-- <div class="damao">大毛</div> -->
+     <!-- <div class="ermao">二毛</div> -->
+
+
+     <!-- 
+         【2.】嵌套块元素垂直外边距塌陷：
+            对于两个嵌套关系(父子关系)的块元素,父元素有上外边距同时子元素也有上外边距,
+            此时父元素会塌陷较大的外边距值。
+            =>本例中：在子元素中添加了margin-top: 100px; 本意是相让子元素距离父元素100px；
+            然而结果非但没有成功，反倒是父元素连同子元素整体塌陷了100px；
+      -->
+      <!-- 
+          解决方案：
+            (1) 可以给父元素定义上边框;
+            (2) 可以给父元素定义上内边距;
+            (3) 可以给父元素添加overflow: hidden属性.
+            => 推荐第三种方案，因为前两种方案会改变父盒子的实际大小！
+    -->
+      <div class="father"> 
+          <div class="son"></div>
+      </div>
+</body>
+</html>

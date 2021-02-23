@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?ldtv90');
+            src: url('fonts/icomoon.eot?ldtv90#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?ldtv90') format('truetype'),
+                url('fonts/icomoon.woff?ldtv90') format('woff'),
+                url('fonts/icomoon.svg?ldtv90#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        span {
+            font-family: 'icomoon';
+            font-size: 100px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        使用场景：主要用于显示网页中通用，常用的一些小图标。
+        精灵图缺点：
+                1.图片文件比较大；
+                2.图片本身放大或缩小会失真；
+                3.一旦图片制作完成，后期想要更换则是非常麻烦。
+        ===>为此，引入了一种技术，就是字体图标技术
+            展示的是图标，本质却是字体！
+        字体图标优点：
+            1.轻量级，一旦字体加载，图标就会马上渲染出来，减少了服务器请求；
+            2.灵活性：本质其实是字体，可以随意的改变字体颜色，产生阴影，透明效果，旋转等；
+            3.兼容性：几乎支持所有的浏览器，请放心大胆的使用；
+        notice：字体图标不能替代精灵技术，只是对工作中图标部分技术的提升和优化！
+        总结：
+            1.如果遇到一些结构和样式比较简单的小图标，就用字体图标；
+            2.如果遇到一些结构和样式复杂的图片，就用精灵图解决！
+     -->
+     <span></span>
+     <span></span>
+     <!-- 
+         使用步骤：
+            1.将解压后的fonts文件复制一份到与.html统计的目录下；
+            2.然后将style.css文件中的部分内容进行复制；
+            3.打开解压后的html文件，复制图标后面的小方框放置需要显示的标签内；
+            4.为标签添加类选择器，指定font-family属性！
+      -->
+</body>
+
+</html>

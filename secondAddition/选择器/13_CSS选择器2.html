@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 不管任何元素，只要它的第一个儿子是span就能匹配 */
+        span:first-child {
+            color: red;
+        }
+        /* 不管任何元素，只要它的最后一个儿子是div就能匹配 */
+        div:last-child {
+            color: green;
+        }
+        /* 匹配p的子元素中第一个元素为span的元素，也即是p的第一个儿子为span的元素 */
+        p > span:first-child {
+            background-color: yellow;
+        }
+        /* 匹配任意元素中只有一个儿子并且这个儿子必须是p元素 */
+        div:only-child {
+            border: 1px solid red;
+        }
+        /*  */
+        p:only-of-type {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <span>好吧</span>
+        <h4>h4标题</h4>
+        <h3>
+            <div>你好吗</div>
+            <div>还行吧</div>
+        </h3>
+    </div>
+
+    <h2>中华人民共和国</h2>
+    <span>我是span</span></br>
+    <p>
+        <span>helloWorld</span>
+        <span>love you</span>
+        <div>美国</div>
+    </p>
+
+    <div>
+        <!-- <p>This is a paragraph.</p> -->
+        <!-- <h2>唯一的一个儿子</h2> -->
+        <div>你好！！！</div>
+    </div>
+</body>
+</html>

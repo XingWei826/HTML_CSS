@@ -1,0 +1,165 @@
+﻿1.  段落标签：<p></p>
+
+2.  换行标签：<br/>
+
+3.  文本格式化标签：
+<strong></strong>  ||  <b></b>
+<em></em> 	 || <i></i>
+<del></del>    	 || <s></s>
+<ins></ins>	 || <u></u>
+
+4.  图像标签：
+<img src="图像URL" />
+	属性：
+	(1) src: 图片路径
+	(2) alt: 替换文本，图像不能显示的时候指定显示的文字
+	(3)title: 提示文本，鼠标放到图像上时显示的文字
+	(4)width:	图像的宽度
+	(5)height：图像的高度
+	(6)border: 图像的边框粗细
+	<img src="ball.png" alt="Hello World" title="Zhang" width=300 height=300 border=5/>
+
+5.  超链接标签：
+<a  href="目标地址” target="目标窗口的弹出方式">     文本或图像    </a>
+target :  _self（默认值）, _blank。
+（1）外部链接         <a href= "http://www.baidu.com" target="_blank">百度</a>
+（2）内部链接         <a href= "./Hello.html" target="_blank">点击我啊</a>	
+（3）空链接             <a href= "#" target="_blank">点击我啊-我是空链接</a>
+（4）下载链接          <a href= "../images.rar" target="_blank">下载链接-.exe/.zip</a>
+（5）网页元素链接    在网页中的各种元素，例如文本，图像，音频，视频，，，，，，等都可以添加超链接
+（6）锚点链接           点击链接，可以快速定位到页面中的某个位置
+
+6.  注释标签：
+<!--   xxxxxxxxxx    -->
+
+7.表格标签
+表格由 <table> 标签来定义。每个表格均有若干行（由 <tr> 标签定义），每行被分割为若干单元格（由 <td> 标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。
+数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。
+
+<table>
+	<tr>
+		<td>  单元格内的文字 </td>
+	</tr>
+</table>
+(1)  <table></table>  定义表格的标签
+(2)  <tr></tr>	   定义表格中的行，必须嵌套在<table></table>内
+(3)  <td></td>          定义表格中的单元格，必须嵌套在<tr></tr>内
+  <table>
+        <tr><td>姓名</td>   <td>性别</td>  <td>年龄</td></tr>
+        <tr><td>刘德华</td> <td>男</td> <td>56</td></tr>
+        <tr><td>范冰冰</td> <td>女</td> <td>62</td></tr>
+        <tr><td>研发部</td> <td>男</td> <td写代码好</td></td></tr>    
+    </table>
+(4)表头单元格标签===》大多数浏览器会把表头显示为粗体居中的文本
+ <tr></tr>  ===>   <th></th>
+(5)表格属性
+	align:              left,right,centert
+	border:           ""（1）是等价的，当>=2时，针对的是最外面边框
+	cellpading:     单元格边沿与其内容之间的空白（默认是2像素）
+	cellspacing:    单元格之间的空白（默认是2像素）
+	width:             表格的宽度(像素值或百分比)
+	height:            表格的高度
+
+(6)表格结构标签
+	<thead>,<tbody>
+(7)合并单元格
+	跨行合并： rowspan = "合并单元格的个数”
+	跨列合并： colspan = "合并单元格的个数"
+	合并步骤：
+		 a.确定跨行还是跨列
+		 b.找到目标单元格，写上合并方式<td cospan="3"> </td>
+	                  c.删除多余的单元格
+8.列表标签
+	无序列表，有序列表，自定义列表
+（1）
+	<ul>
+		<li>  ... </li>
+		<li>  ... </li>
+		<li>  ... </li>
+	</ul>
+<ul> </ul>中只能嵌套<li> </li>
+<li></li>相当于一个容器，可以所有类型元素！
+（2）
+	<ol>
+		<li> ... </li>
+		<li> ... </li>
+		<li> ... </li>
+	</ol>
+（3）
+	<dl>
+		【<dt>...</dt>】
+		<dd>...</dd>
+		<dd>...</dd>
+		<dd>...</dd>
+	</dl>
+一般是一个dt对应多个dd！
+
+9.表单标签
+（1）
+	表单 = 表单域 + 表单控件(表单元素) + 提示信息
+（2）表单域
+	<form action = "url地址" method="提交方式" name="表单域名称">
+		各种表单元素控件
+	</form>
+（3）表单元素
+	a.  input输入表单元素
+		<input type="属性值" />
+			type属性的属性值：button checkbox file hidden image password
+				radio reset submit text
+		其他属性：name,value(后台人员使用),checked,maxlength
+	b.select下拉表单元素
+	c.textarea文本域元素
+
+10.label标签
+  功能：用于绑定一个表单元素，当点击<label>标签内的文字时，就会将焦点转移到对应的表单元素上，用来增加用户体验！
+  语法：
+	<label for="Hello"> 用户名: </label>
+	<input type="text" id="Hello">
+
+	用户名：<input type="text" id="Hello">   //本来是一个文本输入框
+	现在将标签给绑定到这个文本框上，也即是单击标签可以将焦点聚焦到文本输入框中!
+===》     <label for = "Hello"> 用户名：<input type ="text" id = "Hello">
+
+11.select下拉表单
+	<select>
+		<option> ... </option>
+		<option> ... </option>
+		<option> ... </option>
+	</select>
+ <option selected = "selected"> ------- 默认显示的项
+
+12.文本域元素
+	<textarea rows = "3" cols = "20">
+		文本内容
+	</textarea>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

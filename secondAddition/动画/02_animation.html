@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #banana {
+            font-size: large;
+            border: medium solid black;
+        }
+        #banana:hover {
+            animation-delay:  100ms;
+            animation-duration: 500ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-name: 'MyAnimation';
+        }
+        @keyframes MyAnimation {
+            from {
+                font-size: xx-small;
+                background-color: red;
+            }
+            50% {
+                background-color: yellow;
+                padding: 1px;
+            }
+            75% {
+                color: white;
+                padding: 2px;
+            }
+            to {
+                font-size: x-large;
+                border: medium solid black;
+                background-color: green;
+                color: white;
+                padding: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="banana">HelloWorld</div>
+</body>
+</html>
+

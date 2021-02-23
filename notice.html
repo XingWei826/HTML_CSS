@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1.文字类元素内 不能存放块级元素 ;
+        2.<p>主要是用来存放文字 => p里面不能存放块级元素;
+            =>看起来好像没事，实际F12就知道了错误之处。
+        3.同理，h1~h6等都是文字类块级元素，里面也不能存放其他块级元素。
+    -->
+    <div>好吧</div>
+    <span>好吧</span>
+</body>
+</html>

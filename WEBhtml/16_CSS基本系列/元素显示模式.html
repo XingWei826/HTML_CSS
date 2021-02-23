@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+        a {
+            width: 150px;
+            height: 50px;
+            background-color: red;
+            /* 经过下面语句就把行内元素 -> 块元素 */
+            display: block;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 经过下面元素就把块元素 -> 行内元素 */
+            display: inline;
+        }
+        span {
+            width: 100px;
+            height: 300px;
+            background-color: skyblue;
+            /* 行内元素 -> 行内块元素 */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+       一， 块元素：<h1>~<h6>,<P>,<div>,<ul>,<ol>,<li>,,,
+            其中<div>标签是最典型的块元素；
+            块元素特点：
+                1.独占一行；
+                2.高度，宽度，外边距以及内边距都可以控制；
+                3.宽度默认是容器（父级宽度）的100%；
+                4.是一个容器盒子，里面可以放行内或者块级元素。
+                5.文字类的元素内不能使用块级元素；
+                6.<p>标签主要用于存放文字，因此<p>里面不能放块级元素，特别是不能放<div>;
+                7.同理，<h1>~<h6>等都是文字类块级标签，里面也不能存放其他块级元素。
+        二，行内元素：<a>,<strong>,<b>,<em>,<i>,<del>,<s>,<ins>,<u>,<span>,,,
+                其中<span>标签是最典型的行内元素(内联元素)。
+              行内元素特点：
+                1.相邻行内元素在一行上，一行可以显示多个；
+                2.高，宽直接设置是无效的；（需经过特殊转换才行）
+                3.默认宽度就是它本身内容的宽度；
+                4.行内元素只能容纳文本或其他行内元素。
+        三，行内块元素
+                在行内元素中有几个特殊的标签: <img/>,<input/>,<td>，
+                它们同时具有块元素和行内元素的特点。
+     
+     -->
+     <!-- <span>你好</span>  <span>我好</span> -->
+
+     <!-- 行内元素 -> 块级元素 -->
+
+     <a href="#">我是行内元素1</a>
+     <a href="#">我是行内元素2</a>
+
+      <!-- 块级元素 -> 行内元素 -->
+     <div>我是块级元素1</div>
+     <div>我是块级元素2</div> <br>
+
+     <!-- 行内元素 -> 行内块元素 -->
+     <span>我是行内元素</span>
+
+     <!-- 
+         1.块级元素会独占一行，从上到下顺序排列！
+         2.行内元素按照顺序，从左至右顺序排列，碰到父元素边缘时会自动换行！
+      -->
+
+</body>
+</html>

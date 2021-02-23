@@ -1,0 +1,7 @@
+/* 在style.css文件中导入其他的.css文件 */
+@charset "UTF_8";
+@import "./span.css";   
+div {
+    color: red;
+    border: 1px solid green;
+}

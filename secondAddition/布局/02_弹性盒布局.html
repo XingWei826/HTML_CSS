@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            width: 100px;
+            border: thin solid black;
+            letter-spacing: 10px;   
+            word-spacing: 50px;
+            line-height: 50px;
+            background-color: red;
+            word-wrap: normal;
+            text-indent: 15%;
+            text-decoration: blink;
+            text-shadow: 0px 5px 3px green;
+            font-variant: small-caps;
+        }
+        #test {
+            font-variant: small-caps;
+            font-size: xx-large;
+        }
+        #banana{
+            font-size: 10px;
+            transition-property: all;
+            transition-delay: 50ms;
+            transition-duration: 500ms;
+        }
+        #banana:hover {
+            font-size: large;
+            border: thin solid red;
+            background-color: green;
+            color: white;
+            padding: 4px;
+            /* 添加过渡效果： */
+            transition-delay: 500ms;
+            transition-duration: 1000ms;
+            transition-property: all;
+            transition-timing-function: ease-in;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello World jsklfjsjfksjfjsklfjlsk</p>
+    <div id="test">hello world</div>
+    <div>hello world</div>
+    <span id="banana">好吧</span>
+</body>
+</html>

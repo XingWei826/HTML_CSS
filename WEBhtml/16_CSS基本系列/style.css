@@ -1,0 +1,6 @@
+/* 样式表文件之中，只是对样式进行设置，没有标签一说！ */
+h1 {
+    font-size: 40px;
+    color: green;
+    font-family: 黑体;
+}

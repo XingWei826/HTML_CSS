@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            /* relative: 以自己原来的位置为参照点进行偏移！
+            不脱标，原来的标准流的位置继续占有，后面的盒子仍然以标准流的方式对待它们！ */
+            position: relative; /**/
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        定位：将盒子定在某一个位置。
+        定位 = 定位模式 + 边偏移
+        定位模式用于指定一个元素在文档中的定位方式；
+        边偏移则决定了该元素的最终v位置。
+        定位模式：position: static|relative|absolute|fixed
+        边偏移：top|bottom|left|right
+     -->
+     <div class="box1"></div>
+     <div class="box2"></div>
+</body>
+</html>

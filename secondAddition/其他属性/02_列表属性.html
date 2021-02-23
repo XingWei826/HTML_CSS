@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            /* list-style-type: lower-alpha; */
+            /* list-style-image: url("../res/1.ico"); */
+            background-color: red;
+        }
+
+        li.inside {
+            list-style-position: inside;
+            list-style-type: square;
+        }
+
+        li#outside {
+            list-style-position: outside;
+        }
+
+        li:hover {
+            cursor: wait;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        These are the inside items:
+        <li class="inside">香蕉</li>
+        <li class="inside">橘子</li>
+        <li class="inside">苹果</li>
+        These are the outside items:
+        <li id="outside">老虎</li>
+        <li id="outside">大象</li>
+        <li id="outside">狮子</li>
+    </ul>
+</body>
+
+</html>

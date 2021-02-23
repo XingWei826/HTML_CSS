@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 后代选择器 */
+    ol li {
+        color: red;
+    }
+
+    ol li a {
+        color: yellow;
+    }
+
+    ul li a {
+        font-size: 100px;
+        color: pink;
+    }
+
+    .test li a {
+        font-size: 50px;
+        color: green;
+        font-weight: bold;
+    }
+
+    /* 子选择器 */
+    .test1 > a {
+        font-family: 华文行楷;
+        font-size: 50px;
+    }
+
+    /*并集选择器 */
+    div,
+    p,
+    .pig li {
+        color: green;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <!-- 
+    后代选择器:层层递进;
+    子选择器：必须是亲儿子，不存在递进关系;
+    并集选择器
+    伪选择器
+-->
+    <h1>ol_后代选择器</h1>
+    <ol>
+        <li>我是ol的子集</li>
+        <li>我是ol的子集</li>
+        <li>我是ol的子集</li>
+        <li><a href="#">我是孙子集</a></li>
+    </ol>
+
+    <!--  -->
+    <h1>ul_后代选择器</h1>
+    <ul>
+        <li>我是ul的子集</li>
+        <li>我是ul的子集</li>
+        <li>我是ul的子集</li>
+        <li><a href="#">HelloWorld</a></li>
+    </ul>
+    <ul class="test">
+        <li>我是ul的子集</li>
+        <li>我是ul的子集</li>
+        <li>我是ul的子集</li>
+        <li><a href="#">HelloWorld world!!!!!!</a></li>
+    </ul>
+
+    <!--  -->
+    <h1>子选择器</h1>
+    <div class="test1">
+        <a href="#">儿子好</a>
+        <p>
+            <a href="#">孙子好</a>
+        </p>
+    </div>
+
+    <!--并集选择器可以选择多组标签，同时为他们定义相同的样式，通常用于集体声明 -->
+    <h1>并集选择器</h1>
+    <div>熊大</div>
+    <p>熊二</p>
+    <span>光头强</span>
+    <ul class="pig">
+        <li>佩奇</li>
+        <li>佩奇的爹</li>
+        <li>佩奇的妈</li>
+    </ul>
+</body>
+
+</html>

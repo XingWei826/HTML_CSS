@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  */
+        p:only-of-type {
+            color: red;
+        }
+
+        /* 匹配body中的第三个儿子，索引号从1开始： */
+        body > :nth-child(3) {
+            color: green;
+        }
+        /*  */
+        :enabled {
+            border: 1px solid red;
+        }
+        :disabled {
+            background-color: green;
+        }
+        /*  */
+        span {
+            color: red;
+        }
+        :checked + span {
+            border: 1px solid blue;
+            color: green;
+        }
+        /*  */
+        /* :valid {
+            background-color: green;
+        }
+        :invalid {
+            background-color: red;
+        } */
+        /*  */
+        :in-range {
+            color: green;
+        }
+        :out-of-range {
+            color: red;
+        }
+        /*  */
+        :required {
+            background-color: green;
+        }
+        :optional {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>我是这个div中唯一的段落元素.</p>
+    </div>
+
+    <div>
+        <p>这个div中有多个段落..</p>
+        <p>我也是一个段落.</p>
+    </div>
+
+    <div>我是老三</div>
+
+    <!-- <textarea name="" id="" cols="30" rows="10">jfsljfsjflsjfjslfl</textarea><br> -->
+    <!-- <textarea name="" id="" cols="30" rows="10" disabled>456488fsf sf </textarea><br> -->
+
+    <input type="checkbox" name="" id="">
+    <span>将会被匹配了</span><br>
+
+    <!-- <input type="text" name="" id="" required> -->
+
+    <!-- <input type="number" name="" id="" value="10" min="0" max="100" step="1"> -->
+
+    <input type="number" required><br>
+    <input type="number">
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 清除浮动 */
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+        .clearfix:after {
+            clear: both;
+        }
+        .clearfix {
+            *zoom: 1;
+        }
+        .box {
+            width: 800px;
+            border:1px solid blue;
+            margin: 0 auto;
+            background-color: red;
+        }
+        .damao {
+            float: left;
+            width: 300px;
+            height: 200px;
+            background-color: purple;
+        }
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+        .footer {
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix" >
+        <div class="damao"></div>
+        <div class="ermao">22222</div>
+    </div>
+    <div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:active {
+            background-color: green;
+        }
+        :focus {
+            color: red;
+        }
+        /*  */
+        a:not([href*="nihao"]) {
+            background-color: red;
+        }
+        :lang(en) {
+            /* border: 1px blue solid; */
+        }
+        /*  */
+        div {
+            padding: 40px;
+            height: 200px;
+            background-color: gray;
+            /* border: 20px double black;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 10px/60px; */
+            background-image: url(./res/1.ico);
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 100px 100px;
+            background-origin: padding-box;
+        }
+        p {
+            border: 10px;
+            background-color: red;
+            box-shadow: 5px 4px 10px 10px green , 4px 4px 20px gray inset;
+        }
+        #span {
+            outline: thick solid red;
+            outline-offset: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button>点击</button>
+    <input type="text"><br>
+    <a href="www.nihao.com">你好</a><br>
+    <a href="www.buhao.com">不好</a><br>
+    <div>好呗</div>
+    <p>好吧</p>
+    <span id="span">我好</span>
+</body>
+</html>

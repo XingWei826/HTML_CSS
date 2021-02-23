@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #left {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+        #right {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        浮动特性：
+            1. 脱离标准普通流的控制，移动到指定位置;
+            2.浮动的盒子不再保留原先的位置；
+     -->
+        <div id="left">1</div>
+        <div id="right">2</div>
+        <!-- 
+            由于1号进行了左浮，2号没有浮动，
+            所以1号脱标，不再保留原来的位置，原来的位置被2号占据，
+            出现了堆叠性。
+         -->
+</body>
+</html>

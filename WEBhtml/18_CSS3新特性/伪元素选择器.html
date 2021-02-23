@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        /* before和after好比是一个不可见的盒子：属于行内元素 */
+        div::before {
+            display: inline-block;
+            /* 必须有content属性，否则不起作用 */
+            content: '我';
+            width: 30px;
+            height:40px;
+            background-color: green;
+        }
+        div::after {
+            content: '谁';
+        }
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        是
+    </div>
+    <p>实验</p>
+
+</body>
+</html>

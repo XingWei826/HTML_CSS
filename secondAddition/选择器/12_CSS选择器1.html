@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *.class1 {
+            color: red;
+        }
+
+        span*.class2 {
+            color: green;
+        }
+
+        /* 属性选择器: [属性名 运算符 属性值] */
+        [href] {
+            color: yellow;
+        }
+
+        [href="./res/1.ico"] {
+            color: purple;
+        }
+
+        [self^="zhang"] {
+            color: pink;
+        }
+
+        [self$="world"] {
+            color: red;
+        }
+
+        [self*="how"] {
+            color: blue;
+        }
+
+        [class~="class3"] {
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        [lang|="xn"] {
+            border: 1px solid black;
+        }
+        /* 后代选择器：匹配所有后代(儿子,孙子,,,) ，匹配h2后代中的所有a*/
+        h2 a {
+
+        }
+        /* 子代选择器：匹配h2中的所有儿子，孙子及孙子后代不予考虑【只匹配儿子】 */
+        h2 > a {
+            border: 1px solid red;
+        }
+        /* 相邻兄弟选择器：匹配[紧跟]在h2之后的第一个h1兄弟元素 【必须相邻】*/
+        h2 + h1 {
+            border: 2px solid green;
+        }
+        /* 普通兄弟选择器：匹配h1[之后]的所有兄弟h3，可以不用相邻，只要是之后就可以匹配 */
+        h1 ~ h3 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="class1 class2">helloWorld</div>
+    <p><span class="class1">第一个span元素</span></p>
+    <p><span>第二个span元素</span></p>
+    <p><a href="https://www.baidu.com">百度</a></p>
+    <p><a href="./res/1.ico">图标</a></p>
+    <p><span self="zhangXingWei">zhangXingWei</span></p>
+    <p><span self="world">Wei</span></p>
+    <p><span self="howareyou">how</span></p>
+    <p><span class="class4 class2 class3">class3</span></p>
+    <p><span lang="xn-cn">lang</span></p>
+    <h3>我是前置h3</h3>
+    <h2>
+        <a>你好啊</a><br>
+        <a>实验</a><br>
+        <p>
+            <a>我很好</a>
+        </p>
+    </h2>
+    <h1>我是h1</h1>
+    <h1>我也是h1</h1>
+    <a href=""></a>
+    <h3>我是h3</h3>
+    <h3>我也是h3</h3>
+    <h3>我还是h3</h3>
+</body>
+
+</html>

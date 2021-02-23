@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1 {
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+            overflow-x: auto;
+            /* visibility: collapse; */
+        }
+        span {
+            display: block;
+        }
+        p {
+            display: inline;
+        }
+        h1 {
+            border: 1px solid red;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1.块级元素：
+        常见的块级元素：h1~h6,p,div,ul,ol,li,,,
+            (1)独占一行;
+            (2)宽度，高度，内外边距都可以控制;
+            (3)宽度默认是容器(父级宽度)的100%;
+            (4)是一个容器盒子，里面可以存放行内或块级元素;
+            注意：文字类元素内(比如p)不能使用块级元素;
+                同理，h1~h6等都是文字类块级元素，里面也不能存放其他块级元素。
+            
+        2.行内元素：
+        常见行内元素：a,strong,b,em,i,del,s,ins,u,span，，，，，，
+            (1)相邻元素在一行，一行可以显示多个;
+            (2)宽，高直接设置是无效的;
+            (3)默认宽度就是本身内容的高度;
+            (4)行内元素只能容纳文本或其他行内元素;
+            注意：<a> 链接里面不能再放链接;
+                特殊情况，链接<a>里面可以存放块级元素，但是给<a>转一下块级模式最安全。
+
+        3.行内块元素：
+            常见的行内块元素：img,input,td，同时具有块元素和行内元素的特点;
+            特点：
+                (1)相邻行内块元素在同一行,它们之间存在缝隙,一行可以显示多个;
+                (2)默认宽度是本身内容的宽度；
+                (3)宽度，高度，内外边距都是可以控制的;
+     -->
+    <div class="class1">worlfsfsfsfsfsfsfsfsfsffdgsdddddddddddddddd</div>
+    <div>还好啊</div>
+    <span>你好</span>
+    <span>你好</span>
+    <p>段落1</p>
+    <p>段落2</p>
+    <h1>标题1</h1>
+    <h1>标题1</h1>
+    <h1>标题1</h1>
+    <h1>标题1</h1>
+    <p>
+        <div>是的</div>
+    </p>
+    
+</body>
+</html>

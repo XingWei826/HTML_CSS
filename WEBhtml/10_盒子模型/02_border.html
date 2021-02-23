@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            /* border-width: 5px;
+            border-style: dashed;
+            border-color: red; */
+            /*没有顺序，可以颠倒 */
+            /* border: 5px dotted green;  */
+            border-top: 5px solid #000;
+            border-bottom: 3px dotted red;
+            border-left: 10px dashed green;
+            border-right: 2px solid yellow;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* padding-left: 20px;
+            /* padding-top: 30px; */
+            padding-bottom: 20px;
+            padding-right: 10px;
+        }
+
+        /* padding的复合写法：
+            padding: 5px;            //上下左右
+            padding: 5px 10px        //上下  左右
+            padding:5px 10px 20px   //上  左右  下
+            padding:5px 5px 5px 5px //上 右 下 左（顺时针）
+         */
+        /* Notice：边框border和padding都会影响盒子的实际大小 */
+        /* 如果盒子本身没有写width/height属性，那么此时的padding不会撑开盒子大小*/
+   
+        li {
+            /* 去掉list前面的小圆点 */
+            list-style: none;
+        }
+   
+    </style>
+</head>
+
+<body>
+    <!-- border属性： 
+        border: border-width | border-style | border-color
+        border-collapse: collapse;  //可以用在table中，将2个单元格相邻的边框合并为一个！（符合视觉效果）
+    -->
+    <div>
+        Hello World
+    </div>
+    <p>你好啊</p>
+
+    <!--
+        1.  ul>li*5>a
+        2. shift+alt 快速插入
+     -->
+    <ul>
+        <li><a href="#"> 将零件</a></li>
+        <li><a href="#"> 解放路</a></li>
+        <li><a href="#"> 几分熟 </a></li>
+        <li><a href="#"> 链接库劳卡山鳉</a></li>
+        <li><a href="#"> 杰弗里斯了</a></li>
+    </ul>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            position: absolute;
+            top: 300px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .test {
+            position: absolute;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 拓展：
+        1.给行内元素添加绝对或者固定定位，可以直接设置高度和宽度！
+        2、给块级元素添加绝对定位或者固定定位，如果不给宽度和高度，默认大小是内容的大小！
+        3,浮动元素，绝对定位(固定定位)的元素都不会触发外边距合并的问题。
+    -->
+     <span>你好吗</span>
+     <div class="test">监考老师</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 【【【1.块级元素居中】】】 */
+        /* margin可以使得块级盒子水平居中，但是必须满足两个条件：
+            1. 盒子必须指定宽度；
+            2. 盒子左右的margin都设置为auto。
+        */
+        div {
+            background-color: red;
+            height: 100px;
+            width: 200px;
+            margin: 0 auto;     /* 只要满足左右auto即可 */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .one {
+            margin-bottom: 20px;
+        }
+
+        /* 2.【【【2.行内元素和行内块元素水平居中】】】 */
+        /* 只需要给其复父元素添加text-align: center即可！ */
+    </style>
+</head>
+<body>
+    <div class="one"> Hello </div>
+    <div>
+        <span>水平居中</span>
+    </div>
+
+    <div>
+        <img src="../images/hello.png" alt="">
+    </div>
+</body>
+</html>

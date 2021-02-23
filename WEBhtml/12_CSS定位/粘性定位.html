@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        .nav {
+            position: sticky;   /* 粘性定位 */
+            top: 0 ;            /* 当距离浏览器上边沿为0时，变成了粘性定位 */
+            width: 800px;
+            height: 50px;
+            background-color: red;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        position: sticky;
+        粘性定位：可以看作是 相对定位 和 固定定位的混合。
+        特点：
+            1.以浏览器的可视窗口为参照点移动元素；
+            2.粘性定位占有原先的位置；
+            3.必须添加top,left,right,bottom其中一个才有效。
+            4.兼容性较差，当前阶段使用较少, IE不支持！
+     -->
+     <div class="nav">我是导航栏</div>
+</body>
+</html>

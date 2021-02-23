@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .class1 {
+            color: red;
+        }
+        .class2 {
+            color: green;
+        }
+        strong {
+            border: inherit;
+        }   /* 使得strong的border进行继承,继承其父亲的border */
+    </style>
+</head>
+<body>
+    <div>helloWorld</div>
+    <span>HelloWorld</span>
+    <link rel="stylesheet" href="./res/style.css">
+    <div class="class1 class2">测试 <strong>strong元素</strong></div>   <!--同级，则后来居上，显示绿色-->
+</body>
+</html>

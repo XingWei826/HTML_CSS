@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav li {
+            color: red;
+        }
+        .nav .blue {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="blue">香蕉</li>
+        <li>苹果</li>
+        <li>葡萄</li>
+        <li>梨子</li>
+    </ul>
+
+    <!-- 
+        实际上之前你可能一眼望去，第一个li的颜色被修改成了蓝色;
+        实际这是一种错觉;
+        根据权重：.nav li => 0011 
+                .blue    => 0010
+        由于0011 > 0010, 所以第一个小li最终还是显示为红色 。
+        如若成功，则必须 .nav .blue => 0020 > 0011
+        =>此时第一个小li就真的成了蓝色。
+     -->
+</body>
+</html>

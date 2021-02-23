@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1 {
+            position: fixed;
+            /* position: absolute; */
+            top: 300px;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+        .class2 {
+            position: fixed;
+            /* position: absolute; */
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        定位的特殊特性：
+            1. 行内元素添加绝对或者固定定位后，可以直接设置高度和宽度;
+            2. 块级元素添加绝对或者固定定位，如果不给宽度或者高度，默认宽度大小是内容的大小;
+            3. 脱标的盒子不会触发外边距塌陷;
+                浮动元素，绝对定位，固定定位的元素都不会触发外边距合并问题。
+     -->
+     <span class="class1">行内元素</span>
+     <div class="class2">块级元素</div>
+</body>
+</html>

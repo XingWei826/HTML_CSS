@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            float: left;
+        }
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+        p {
+            float: right;
+            height: 400px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        浮动特性：
+        1.如果多个盒子都设置了浮动，则它们会按照属性值 => 一行内显示并且顶端对齐排列。
+        2.浮动的盒子是相互贴在一起的，相互之间没有缝隙，如果父级宽度装不下这些浮动的盒子，
+            那儿多出的盒子将会自动另起一行显示。
+        3.任何元素都可以进行浮动，浮动元素具有行内块元素的特性。
+        4.如果块级盒子没有设置宽度，默认宽度和父级一样宽，但是添加浮动后，它的宽度根据内容来决定。
+     -->
+     <!-- 验证第1,2特性： -->
+     <div style="background-color: red;">1</div>
+     <div style="background-color: green;">2</div>
+     <div style="background-color: blue;">3</div>
+     <div style="background-color: yellow;">4</div>
+
+
+     <!-- 验证第3特性： -->
+    <!-- <span>文本1</span> -->
+    <!-- <span>文本2</span> -->
+
+
+    <!-- 验证第4特性： -->
+     <p>hao</p>
+</body>
+</html>

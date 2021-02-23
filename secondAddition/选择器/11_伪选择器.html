@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 此时只会选择p元素中的首行进行匹配！ 默认是对全体元素都有效果，可以加以限定！*/
+        p::first-line {
+            background-color: red;
+        }
+        ::first-letter {  /* 此时将对所有的首字母加以修饰 */
+            color: green;
+            font-weight: bolder;
+        }
+        a::before {
+            content: "Click to here    ";
+            color: yellow;
+        }
+        a::after {
+            content: '!';
+            color: red;
+        }
+        /* CSS计数器： */
+        body {
+            counter-reset: Count 0;
+        }
+        div::before {
+            content: counter(Count) ". ";
+            counter-increment: Count 1;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        This is a apple!<br>    
+        helloWorld<br>
+    </p>
+    <p>
+        These are bananas!<br>
+        i am happy!
+    </p>
+    <h3>How are you?</h3>
+    <h4>you are a good person!</h4>
+    <a href="#">我是空链接</a>
+    <div>我是div1</div>
+    <div>我是div2</div>
+    <div>我是div3</div>
+</body>
+
+</html>

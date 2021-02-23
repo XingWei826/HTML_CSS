@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+        div  p {
+            height: 100px;
+            /* width: 100%; */
+            background-color: green;
+            padding-left: 30px;
+        }
+        /* 因为没有给p添加width，则默认和父亲一样宽(300*100);
+        同时给p添加了padding值，但是却并没有改变p的实际大小(300*100);
+        但是一旦给p指定了宽度，那么此时padding就会影响p的实际大小(330*100)! */
+    </style>
+</head>
+<body>
+    <!-- 
+        padding不会影响盒子的实际大小的情况：
+            如果盒子本身没有指定width或height属性,则此时padding不会影响盒子的实际大小。
+     -->
+     <div>
+         <p>好吧</p>
+     </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* nth-child 和 nth-of-type的区别： */
+
+        /* 此时将进行操作：首先选中第一个，然后将其类型与div比对，
+        如若匹配，则执行操作，否则不执行！ */
+        section div:nth-child(1) {
+            background-color: red;
+        }
+
+        /* 执行div里的第一个 */
+        section div:nth-of-type(1) {
+            background-color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--
+         nth-child 和 nth-of-type之间的区别：
+         nth-child:首先进行排序，然后检测是否匹配，，，，，，
+         nth-of-type:只对指定的类型进行操作，，，
+     -->
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+
+
+</body>
+
+</html>

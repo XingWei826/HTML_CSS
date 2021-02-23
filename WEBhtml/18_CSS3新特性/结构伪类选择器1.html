@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.选择老大 */
+        /* ul li:first-child {
+            background-color: red;
+        } */
+
+        /* 2.选择老八 */
+        /* ul li:last-child {
+            background-color: green;
+        } */
+
+        /* 3.任意匹配第n个孩子: nth-child(n)--->n可以是数字，公式,even,odd */
+        /* ul li:nth-child(4) {
+            background-color: yellow;
+        } */
+
+        /* nth-child(n) */
+        ul li:nth-child(even) {
+            background-color: gray;
+        }
+
+        /* 4.n-child(n)中的n使用公式，此时n是从0开始的 */
+        ol li:nth-child(2n+1) {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>我是老大</li>
+        <li>我是老二</li>
+        <li>我是老三</li>
+        <li>我是老四</li>
+        <li>我是老五</li>
+        <li>我是老六</li>
+        <li>我是老七</li>
+        <li>我是老八</li>
+    </ul>
+
+    <ol>
+        <li>我是老大</li>
+        <li>我是老二</li>
+        <li>我是老三</li>
+        <li>我是老四</li>
+        <li>我是老五</li>
+        <li>我是老六</li>
+        <li>我是老七</li>
+        <li>我是老八</li>
+    </ol>
+</body>
+</html>

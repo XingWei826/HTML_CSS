@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #father {
+            color: red;
+        }
+        p {
+            color: green;
+        } 
+    </style>
+</head>
+<body>
+    <!-- 前文不是说：Id > 元素选择器吗，那么应该显示红色，为什么是绿色？？？
+        因为继承的权重为0，也就是说：p虽然继承了div，但是权重为0，也就是不起作用，
+        所以最终起作用的还是p自己指定的样式！    
+    -->
+    <div id="father">
+        <p>尖峰时刻看家三口之家开始发惊世毒妃</p>
+    </div>
+</body>
+</html>

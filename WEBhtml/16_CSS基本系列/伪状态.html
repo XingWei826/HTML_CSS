@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 为防止不生效，严格按照LVHA的顺序进行写！ */
+        /* 未访问的链接的颜色 */
+        /*标签a在浏览器中具有默认样式，所以在实际工作中需要单独给链接指定样式  */
+        a:link {    
+            color: red;
+            text-decoration: none;
+        }
+        /*已访问的链接的颜色  */
+        a:visited {
+            color: green;
+        }
+        /*悬浮时的颜色 */
+        a:hover {
+            color: black;
+        }
+        /* 活动链接的颜色:点了但没有松开 */
+        a:active {
+            color: deeppink;
+        }
+        /* :focus */
+        input:focus {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#"> Hello World!I am coming!</a><br>
+    <table>
+        <tr>
+            <td><input type="text" value="Hello"></td>
+            <td><input type="text" value="World"></td>
+            <td><input type="text" value="Hello World"></td>
+        </tr>
+    </table>
+</body>
+</html>

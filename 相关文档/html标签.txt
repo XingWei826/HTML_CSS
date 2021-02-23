@@ -1,0 +1,54 @@
+文本格式化标签：
+	1.<hr/>			横线
+	<big><big/>		大号字
+	<small><small/>		小号字
+	<em><em/>		斜体字	<i><i/>
+	<strong><strong/>		粗体文字	<b><b/>
+	<ins><ins/>		下划线	<u><u/>
+	<del><del/>		删除线	<s><s/>	
+
+引文，引用和定义元素
+	<abbr></abbr>			缩写
+	<address></address>		地址
+	<bdo></bdo>			定义文字方向
+	<blockquote></blockquote>		定义长引用
+	<q></q>				定义短引用
+	<dfn></dfn>			定义一个项目
+	<cite></cite>			某个参考文献的引用
+
+计算机代码元素：
+	<code></code>			定义计算机代码文本
+	<kbd></kbd>			定义键盘文本
+	<samp></samp>			定义计算机代码示例
+	<var></var>			定义变量
+	<pre></pre>			定义预格式化文本
+
+HTML CSS：
+	外部样式表：<link></link>
+	内部样式表格：<style></style>
+	内联样式：针对某一具体的，个别元素，在相关标签中使用样式属性
+		<p style="color: red">  Hello World  </p>
+	<div>			块级元素
+	<span>			行内块元素（文档中的行内的小块或区域）
+	<font></font>		规定文本的字体，尺寸，颜色（不推荐使用，请使用CSS）
+	<basefont>		定义基准字体（不推荐使用，请使用CSS）【单标签】【兼容性极差，避免使用】
+	<center></center>		文本使用居中（不推荐使用，请使用CSS）
+
+图像标签：	
+	<img/>
+	<map></map>	定义图像地图
+	<area/>		定义图像地图中的可点击区域
+
+
+
+
+
+
+
+
+
+
+
+
+
+

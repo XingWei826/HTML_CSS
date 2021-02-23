@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            padding: 5px;
+            border: medium double black;
+            background-color: lightgray;
+        }
+        #banana {
+            font-size: large;
+            border: medium solid black;
+            transition-delay: 10ms;
+            transition-duration: 250ms;
+            
+        }
+        #banana:hover {
+            font-size: x-large;
+            border: medium solid white;
+            background-color: green;
+            color: white;
+            padding: 4px;
+            /* 添加过渡 */
+            transition-delay: 100ms;
+            transition-property: all;
+            transition-duration: 500ms;
+        }
+    </style>
+</head>
+<body>
+    <span id="banana">banana</span>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <p><label for="first">Fruit:<input type="text" id="first"></label></p>
+        <p><label for="second">Name:<input type="text" id="second"></label></p>
+        <p>Hobby:<input type="text" disabled></p>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Enter your details</legend>
+            <p><label for="third">姓名：<input type="text" id="third"></label></p>
+            <p><label for="fourth">年龄：<input type="text" id="fourth"></label></p>
+            <button type="reset">reset(button)</button>
+            <input type="button" name="" id="" value="button(input)">
+        </fieldset>
+        <!-- <fieldset disabled> -->
+        <!-- 可以整体禁填功能 -->
+        <fieldset>
+            <legend>Vote For Your Three Favorite Fruits</legend>
+            <p><label for="fifth">身高：<input type="text" id="fifth"></label></p>
+            <p><label for="sixth">体重：<input type="text" id="sixth"></label></p>
+            <p><label for="seventh">兴趣：<input list="hobbylist" type="text" id="seventh"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Vote for your Favorite fruit</legend>
+            <label for="apples">
+                <input type="radio" id="apples" checked value="Apples" name="hao">
+                Apples
+            </label>
+            <label for="banners">
+                <input type="radio" id="banners" value="banners" name="hao">
+                banners
+            </label>
+            <label for="pears">
+                <input type="radio" id="pears" value="pears" name="hao">
+                pears
+            </label>
+        </fieldset>
+    </form>
+    <datalist id="hobbylist">
+        <option value="Apples" label="这是可爱的苹果"></option>
+        <option value="banners">这是新鲜的香蕉</option>
+        <option value="pears"></option>
+    </datalist>
+    <!-- 使用表单form之外的元素： -->
+    <!-- 通过form中的id进行关联，以form的id为核心，其他表单相关元素中的form属性值=form_id即可完成联系 -->
+    <form action="" id="association">
+        <p>
+            <label for="good1">
+                你好：<input id="good1" type="text">
+            </label>
+        </p>
+    </form>
+    <p>
+        <label for="good2">
+            他好：<input readonly form="association" id="good2" type="text">
+        </label>
+    </p>
+    <button form="association" type="submit">Submit</button>
+    <button form="association" type="reset">Reset</button>
+    <input type="number" name="" id="">
+    <input type="range" step="1" min="0" max="100" value="1">
+    <form action="">
+        <fieldset>
+            <legend>
+                其他type类型的input元素
+            </legend>
+            email: <input type="email" name="email" id="email" placeholder="user@domain.com"></br>
+            tel:<input type="tel" name="tel" id="tel" placeholder="(xxx)-xxx-xxxx"></br>
+            url:<input type="url" name="url" id="url"><br>
+            date:<input type="date"><br>
+            color:<input type="color"><br>
+            search:<input type="search"><br>
+            hidden:<input type="hidden" name="recordID" value="1234"><br>
+            image:<input type="image" src="./res/1.ico">
+            file:<input type="file" required>
+        </fieldset>
+    </form>
+    <!--  其他表单元素  -->
+    <select name="" id="" multiple size="">
+        <option value="apples" selected label="Apples">Apples(this is a apple)</option>
+        <option value="banners" label="this is a banner"></option>
+        <option value="pears" label="this is a pear"></option>
+        <option value="oranges" label="this is a orange"></option>
+        <option value="fruits" label="this is a fruit"></option>
+    </select>
+    </br>
+    <select name="" id="">
+        <optgroup label="Top choices">
+            <option value="apples" label="Apples"></option>
+            <option value="" label="banners"></option>
+        </optgroup>
+        <optgroup label="Bottom choices">
+            <option value="">Pears</option>
+        </optgroup>
+    </select>
+    </br>
+    <form action="" oninput="sum.value = num1.valueAsNumber + num2.valueAsNumber">
+        <fieldset>
+            <legend>Price Calculator</legend>
+            <input type="number" name="" id="num1" value="24"> +
+            <input type="number" name="" id="num2" value="23"> =
+            <output for="num1 num2" name="sum" />
+            </br>
+        </fieldset>
+        <input type="submit" >
+    </form>
+    <br>
+    <img src="./res/111.png" alt="not found">
+</body>
+
+</html>
